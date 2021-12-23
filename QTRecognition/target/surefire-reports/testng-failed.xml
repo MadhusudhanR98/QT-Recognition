@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <classes>
+      <class name="AutomationAssignment.QTRecognition.HomePage">
+        <methods>
+          <include name="close"/>
+          <include name="login"/>
+          <include name="titleVerify"/>
+          <include name="activityPageImage"/>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- AutomationAssignment.QTRecognition.HomePage -->
+      <class name="AutomationAssignment.QTRecognition.LoginPage">
+        <methods>
+          <include name="titleName"/>
+          <include name="getwhiteColour"/>
+          <include name="close"/>
+          <include name="getgoldColour"/>
+          <include name="invalidLogin"/>
+        </methods>
+      </class> <!-- AutomationAssignment.QTRecognition.LoginPage -->
+      <class name="AutomationAssignment.QTRecognition.OthersPage">
+        <methods>
+          <include name="activity"/>
+          <include name="kudosFromMe"/>
+          <include name="login"/>
+          <include name="close"/>
+          <include name="count"/>
+          <include name="kudosToMe"/>
+          <include name="kudosToMyself"/>
+        </methods>
+      </class> <!-- AutomationAssignment.QTRecognition.OthersPage -->
+      <class name="AutomationAssignment.QTRecognition.SendKudos">
+        <methods>
+          <include name="validSendKudos"/>
+        </methods>
+      </class> <!-- AutomationAssignment.QTRecognition.SendKudos -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

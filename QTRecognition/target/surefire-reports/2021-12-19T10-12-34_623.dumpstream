@@ -1,0 +1,4 @@
+# Created at 2021-12-19T10:12:44.642
+Boot Manifest-JAR contains absolute paths in classpath 'D:\new eclip\QTRecognition\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

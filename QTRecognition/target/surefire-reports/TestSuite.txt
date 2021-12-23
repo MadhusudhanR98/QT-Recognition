@@ -1,0 +1,146 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 14, Errors: 0, Skipped: 2, Time elapsed: 351.891 s <<< FAILURE! - in TestSuite
+AutomationAssignment.QTRecognition.LoginPage.getgoldColour  Time elapsed: 2.951 s  <<< FAILURE!
+java.lang.AssertionError: expected [#FECC160] but found [#FDCC16]
+	at AutomationAssignment.QTRecognition.LoginPage.getgoldColour(LoginPage.java:77)
+
+AutomationAssignment.QTRecognition.LoginPage.getwhiteColour  Time elapsed: 2.936 s  <<< FAILURE!
+java.lang.AssertionError: expected [#939598] but found [#FFFFFF]
+	at AutomationAssignment.QTRecognition.LoginPage.getwhiteColour(LoginPage.java:104)
+
+AutomationAssignment.QTRecognition.LoginPage.invalidLogin  Time elapsed: 142.531 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to find element with locator By.xpath: //input[@name='username']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-75VQA62', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: RemoteWebDriver
+	at AutomationAssignment.QTRecognition.LoginPage.invalidLogin(LoginPage.java:47)
+
+AutomationAssignment.QTRecognition.LoginPage.titleName  Time elapsed: 2.756 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-75VQA62', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbf07707878f0154bc5909462e2882f6, get {url=https://qtrecognition.testqtwiz.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MADHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64274/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dbf07707878f0154bc5909462e2882f6
+	at AutomationAssignment.QTRecognition.LoginPage.titleName(LoginPage.java:61)
+
+AutomationAssignment.QTRecognition.OthersPage.activity  Time elapsed: 12.109 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-75VQA62', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d039b8a4e31ff4533254e9a546156aa6, findElement {using=xpath, value=//span[.='Activity']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MADHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63379}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63379/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d039b8a4e31ff4533254e9a546156aa6
+	at AutomationAssignment.QTRecognition.OthersPage.activity(OthersPage.java:55)
+
+AutomationAssignment.QTRecognition.OthersPage.count  Time elapsed: 13.164 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-75VQA62', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d039b8a4e31ff4533254e9a546156aa6, findElement {using=id, value=todayCount}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MADHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63379}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63379/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d039b8a4e31ff4533254e9a546156aa6
+	at AutomationAssignment.QTRecognition.OthersPage.count(OthersPage.java:66)
+
+AutomationAssignment.QTRecognition.OthersPage.kudosFromMe  Time elapsed: 12.162 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-75VQA62', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d039b8a4e31ff4533254e9a546156aa6, findElement {using=xpath, value=//span[.='Kudos from me']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MADHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63379}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63379/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d039b8a4e31ff4533254e9a546156aa6
+	at AutomationAssignment.QTRecognition.OthersPage.kudosFromMe(OthersPage.java:35)
+
+AutomationAssignment.QTRecognition.OthersPage.kudosToMe  Time elapsed: 12.165 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-75VQA62', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d039b8a4e31ff4533254e9a546156aa6, findElement {using=xpath, value=//span[.='Kudos to me']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MADHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63379}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63379/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d039b8a4e31ff4533254e9a546156aa6
+	at AutomationAssignment.QTRecognition.OthersPage.kudosToMe(OthersPage.java:45)
+
+AutomationAssignment.QTRecognition.OthersPage.kudosToMyself  Time elapsed: 12.166 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-75VQA62', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d039b8a4e31ff4533254e9a546156aa6, findElement {using=xpath, value=//a[@class='nav-item nav-link']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MADHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63379}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63379/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d039b8a4e31ff4533254e9a546156aa6
+	at AutomationAssignment.QTRecognition.OthersPage.kudosToMyself(OthersPage.java:100)
+
+AutomationAssignment.QTRecognition.SendKudos.validSendKudos  Time elapsed: 16.039 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at AutomationAssignment.QTRecognition.SendKudos.validSendKudos(SendKudos.java:51)
+
+AutomationAssignment.QTRecognition.HomePage.activityPageImage  Time elapsed: 12.138 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-75VQA62', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f15529b78e9a2a20b37881cbf621e8c8, findElement {using=xpath, value=//img[@src='img\\avatar.svg']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MADHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63354/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f15529b78e9a2a20b37881cbf621e8c8
+	at AutomationAssignment.QTRecognition.HomePage.activityPageImage(HomePage.java:47)
+
+AutomationAssignment.QTRecognition.HomePage.titleVerify  Time elapsed: 12.197 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-75VQA62', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f15529b78e9a2a20b37881cbf621e8c8, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MADHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63354/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f15529b78e9a2a20b37881cbf621e8c8
+	at AutomationAssignment.QTRecognition.HomePage.titleVerify(HomePage.java:56)
+
+AutomationAssignment.QTRecognition.HomePage.validLogin  Time elapsed: 12.221 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-75VQA62', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f15529b78e9a2a20b37881cbf621e8c8, findElement {using=xpath, value=//div[1]/div[1]/div[1]/h5[@class='header-font-size']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MADHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63354/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f15529b78e9a2a20b37881cbf621e8c8
+	at AutomationAssignment.QTRecognition.HomePage.validLogin(HomePage.java:39)
+
+AutomationAssignment.QTRecognition.HomePage.close  Time elapsed: 17.268 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'DESKTOP-75VQA62', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f15529b78e9a2a20b37881cbf621e8c8, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\MADHUM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63354}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63354/devtoo..., se:cdpVersion: 96.0.4664.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f15529b78e9a2a20b37881cbf621e8c8
+	at AutomationAssignment.QTRecognition.HomePage.close(HomePage.java:64)
+
